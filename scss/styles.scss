@@ -1,0 +1,19 @@
+/*Components*/
+@import './components/eyes';
+@import './components/scroll-bars';
+@import './components/buttons';
+@import './components/images';
+@import './components/skills';
+
+/*Base*/
+@import './base/base';
+@import './base/typography';
+
+/*Pages*/
+@import './pages/index';
+@import './pages/portfolio';
+@import './pages/contact';
+
+/*Layouts*/
+@import './layout/footer';
+@import './layout/nav';

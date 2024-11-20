@@ -1,0 +1,120 @@
+@import '../abstracts/mixins';
+
+/*Form*/
+.button-submit {
+  @include button-blue-template;
+}
+
+.button-submit:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: $font-color-black;
+}
+
+/*All Navigation*/
+.nav-link {
+  @include button-blue-template;
+}
+
+.nav-link:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: $font-color-black;
+}
+
+/*( .eyes-appear ) - Eye effect appearing upward*/
+.eyes-appear::before {
+  left: 50%;
+  background-image: url('../../src/svg/micro-eyes.svg');
+  height: 75px;
+  top: 10%;
+  transform: translateX(-50%);
+  @include efect-appear;
+}
+
+.eyes-appear:hover::before {
+  top: -70%;
+  opacity: 1;
+}
+
+/*( .hand-portfolio ) - Eye effect appearing downward*/
+.hand-portfolio::before {
+  left: 50%;
+  background-image: url('../../src/svg/portfolio-hand.svg');
+  height: 65px;
+  top: -12%;
+  transform: translateX(-30%);
+  @include efect-appear;
+}
+
+.hand-portfolio:hover::before {
+  top: 78%;
+  opacity: 1;
+}
+
+/*( .hand-contact ) - Eye effect appearing to the right*/
+.hand-contact::before {
+  background-image: url('../../src/svg/hand-cellphone.svg');
+  left: 20%;
+  height: 65px;
+  transform: translateY(-10%);
+  @include efect-appear;
+}
+
+.hand-contact:hover::before {
+  left: -48%;
+  opacity: 1;
+}
+
+/*Portfolio*/
+.box-btn  {
+  @include button-blue-template;
+  bottom: 30px;
+  position: absolute;
+  right: 30px;
+}
+
+.box-btn:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: $font-color-black;
+}
+
+.direct-mail {
+  color: #fff;
+  font-size: 36px;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $light-blue;
+}
+
+.direct-mail:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: $font-color-black;
+}
+
+
+@media (max-width: 480px) {
+  .nav-principal {
+    display: none;
+  }
+
+  .link-portfolio-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .link-portfolio-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .link-portfolio-mobile {
+    display: none;
+  }
+}

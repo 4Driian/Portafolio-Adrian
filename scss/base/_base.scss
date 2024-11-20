@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(1,79,134,1) 0%, rgba(1,58,99,1) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $light-blue;
+  color: $font-color-white;
+  border-radius: 2px;
+}

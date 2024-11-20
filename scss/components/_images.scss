@@ -1,0 +1,162 @@
+@import '../abstracts/variables';
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-principal {
+  width: 350px;
+  filter: $soft-shadow;
+}
+
+.logo-principal:hover {
+  transform:scaleX(0.98) ;
+  transition: all 0.3s ease;
+}
+
+
+.project-item img {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.project-item:hover img {
+  filter: blur(2px) grayscale(100%);
+}
+
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  color: $light-blue;
+  font-size: 50px; 
+  padding: 10px;
+  text-align: center;
+  text-shadow: 3px 3px 5px #0a0a0a2d ;
+}
+
+.social-media-logos {
+  position: relative;
+}
+
+.image-profile img{
+  width: 400px;
+}
+
+.image-profile {
+  border-radius: 50%;
+  filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .logo-principal {
+    margin-top: 35px;
+    width: 250px;
+  }
+
+  .project-item img{
+    width: 190px;
+  }
+
+  .social-media-logos {
+    border-radius: 15px;  
+    filter: $soft-shadow;
+    width: 110px;
+  }
+
+  .social-media-cv {
+    filter: $soft-shadow;
+    width: 110px;
+  }
+
+  .project-overlay {
+    display: none;
+  }
+
+  .image-profile img{
+    width: 200px;
+  }
+  
+  .image-profile {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo-principal {
+    margin-top: 35px;
+    width: 390px;
+  }
+
+  .project-item img{
+    width: 210px;  
+  }
+
+  .social-media-logos {
+    border-radius: 15px;  
+    filter: $soft-shadow;
+    width: 110px;
+  }
+
+  .social-media-cv {
+    filter: $soft-shadow;
+    width: 110px;
+  }
+
+  .project-overlay {
+    display: none;
+  }
+
+  .image-profile img{
+    width: 200px;
+  }
+  
+  .image-profile {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-item {
+    position: relative;
+  }
+  
+  .social-media-logos {
+    border-radius: 15px;  
+    filter: $soft-shadow;
+    width: 210px;
+  }
+
+  .social-media-cv {
+    filter: $soft-shadow;
+    width: 230px;
+  }
+
+  .project-overlay {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
+
+  .image-profile img{
+    width: 400px;
+  }
+  
+  .image-profile {
+    width: 400px;
+    height: 400px;
+  }
+}

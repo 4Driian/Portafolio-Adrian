@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="src/js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Adrian | Home</title>
+  </head>
+
+  <body>
+      <!--Navigation Mobile-->
+    <nav class="nav-mobile">
+      <div class="nav-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="portfolio.html"><li>Portfolio</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="top-page" class="top-page logo-container">
+      <img class="logo-principal" src="src/svg/logo-adrian-animated.svg" alt="Logo 'Adrian' animated"><!--Logo created in svg format with animations-->
+    </div>
+    <a href="#top-page"><img class="hand-up" src="src/img/Mano-a.png" alt="Volver al inicio"></a>
+    
+    <header id="ancla" class="header content">
+
+      <!--Navigation desktop-->
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="index.html" class="nav-link eyes-appear">Home</a></li>
+          <li><a href="./portfolio.html" class="nav-link hand-portfolio">Portfolio</a></li>
+          <li><a href="./contact.html" class="nav-link hand-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="presentation content">
+        <!--Eyes tracker container-->
+        <div class="eyes-container">
+          <div class="eyes-wrapper">
+            <div id="eye-left" class="eye">
+              <div class="pupile"></div>
+            </div>
+            <div id="eye-right" class="eye">
+              <div class="pupile"></div>
+            </div>
+          </div>
+        </div>
+        <!--Presentation description-->
+        <div class="content-info">
+          <div class="content content-titles">
+            <h1>Hi, I'm Adrián!</h1>
+            <h2>I'm a Web Designer and Developer.</h2>
+            <p>As a developer, I like to set myself new challenges every day and be able to overcome them successfully!</p>
+          </div>
+        </div>
+      </div>
+      <!--Recent Projects -->
+      <section class="box-profile">
+        <article class="content container-profile">
+          <h2>About Me</h2>
+          <div class="profile-resume">
+            <p class="about-me"> <!--Description about me-->
+              I'm Adrián Zúñiga Pérez, passionate about technology. 
+              My personal and professional development has been guided by this attraction since my early years. 
+              I consider myself a person passionate about challenges and constant improvement. 
+              With a creative andperseverant mindset, each project becomes an opportunity to learn and grow. 
+              <br>
+              <br>
+              My focus is on front-end development, and throughout my career,
+              I have cultivated a deep interest in user experience (UX/UI), 
+              ensuring the success of every initiative. In my career, 
+              I am committed to continuous learning of new technologies 
+              and working methods, always eager to discover new passions and achieve more ambitious goals.
+            </p>
+            <div class="image-profile">
+              <img src="src/img/image-profile.jpg">
+            </div>
+          </div>
+          <div class="skills">
+            <div class="box-skills">
+            </div>
+          </div>
+        </article>
+
+        <article class="content skills">
+          <h2>Some skills</h2>
+          <div class="skills-list">
+            <ul>
+              <li><img src="src/svg/html-logo.svg" alt="Html"><span class="overlay-text-skills">HTML</span></li>
+              <li><img src="src/svg/css-logo.svg" alt="CSS"><span class="overlay-text-skills">CSS</span></li>
+              <li><img src="src/svg/sass-logo.svg" alt="Sass"><span class="overlay-text-skills">SASS</span></li>
+              <li><img src="src/svg/javaScript-logo.svg" alt="JavaScript"><span class="overlay-text-skills">JavaScript</span></li>
+              <li><img src="src/svg/react-logo.svg" alt="React"><span class="overlay-text-skills">React</span></li>
+              <li><img src="src/svg/nextjs.svg" alt="Next JS"><span class="overlay-text-skills">NextJs</span></li>
+              <li><img src="src/svg/chakra.svg" alt="ChakraUI"><span class="overlay-text-skills">ChakraUI</span></li>
+              <li><img src="src/svg/git-logo.svg" alt="Git"><span class="overlay-text-skills">Git</span></li>
+              <li><img src="src/svg/github-square.svg" alt="GitHub"><span class="overlay-text-skills">GitHub</span></li>
+              <li><img src="src/svg/figma-logo.svg" alt="Figma"><span class="overlay-text-skills">Figma</span></li>
+              <li><img src="src/svg/photoshop-logo.svg" alt="Photoshop"><span class="overlay-text-skills">Photoshop</span></li>
+              <li><img src="src/svg/illustrator-logo.svg" alt="Illustrator"><span class="overlay-text-skills">Illustrator</span></li>
+              <li><img src="src/svg/wordPress.svg" alt="WordPress"><span class="overlay-text-skills">WordPress</span></li>
+              <li><img src="src/svg/drupal-logo.svg" alt="Drupal"><span class="overlay-text-skills">Drupal</span></li>
+              <li><img src="src/svg/storybook-icon.svg" alt="StoryBook"><span class="overlay-text-skills">StoryBook</span></li>
+              <li><img src="src/svg/mongodb-logo.svg" alt="MongoDB"><span class="overlay-text-skills">MongoDB</span></li>
+              <li><img src="src/img/sql-management-logo.png" alt="SQL Management"><span class="overlay-text-skills">Microsoft SQL MANAGEMEN</span></li>
+            </ul>
+          </div>
+          </div>
+        </article>
+      </section>
+      
+      <section class="box-projects">
+        <div class="content container-projects">
+          <div class="recent-projects-resume">
+            <h2>Here!</h2>
+            <p class="projects-description">These are some of my projects that I have done throughout my career in web development and design! <br> <br> Open the link to see all the projects created, each one of them in a different semester!</p>
+            <a class="nav-link link-portfolio-desktop" href="./portfolio.html">Go to portfolio</a>
+          </div>
+          <div class="recent-projects">
+            <article>
+              <div class="project-item">
+                <a class="projects-link" href="https://4driian.github.io/Dalio/"> <img src="./src/img/dalio.png" alt="Imagen de proyecto de Dalio"><div class="project-overlay"><h3>Dalio Project</h3></div></a>
+              </div>
+            </article>
+  
+            <article>
+              <div class="project-item">
+                <a class="projects-link" href="https://4driian.github.io/Biccas/"><img src="./src/img/biccas.png" alt="Imagen de proyecto de Biccas"><div class="project-overlay"><h3>Biccas Project</h3></div></a>
+              </div>
+            </article>
+          </div>
+          <a class="nav-link link-portfolio-mobile" href="./portfolio.html">Go to portfolio</a>
+        </div>
+  
+      </section>
+    </main>
+
+    <footer class="content footer">
+      <h2>Get my contact!</h2>
+      <p class="social-media-description">Just click to send me a Email or download my CV.</p>
+      <section class="social-media">
+        <div class="social-media-links">
+          <!--Link to github-->
+          <a href="mailto:adrian.web.md@gmail.com" class="direct-mail">adrian.web.md@gmail.com</a>
+          <a href="src/img/CV Adrián-EN.pdf" download="CV Adrián Zuñiga Pérez.pdf">
+            <div class="social-media-overlay">
+              <img class="social-media-cv" src="./src/img/cv.png" alt="Ir al perfil de GitHub de Adrián" title="Are you not following me yet?">
+            </div>
+          </a>
+        </div>
+      </section>
+      <p class="copyright">© 2024 Adrián Zúñiga Pérez, Copyright. All rights reserved.</p>
+    </footer> 
+  </body>
+</html>

@@ -1,0 +1,297 @@
+@import '../abstracts/variables';
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column; 
+  color: $font-color-white;
+}
+
+.content-titles {
+  h1, h2, p {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.box-profile {
+  margin-top: 200px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #ffffff;
+  
+  h2 {
+    text-align: center; 
+  }
+}
+
+.about-me {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.profile-resume {
+  display: flex;
+  justify-content: space-around;
+
+  p {
+    padding: 30px;
+    width: 60%;
+    text-align: justify;
+  }
+}
+
+.content.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-projects {
+  margin-top: 150px;
+  color: $font-color-white;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.recent-projects {
+  text-align: center;
+}
+
+.social-media {
+  color: $font-color-white;
+  padding-top: 20px; 
+
+  .social-media-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .skills-list li:hover .overlay-text-skills {
+    display: none;
+  }
+
+  .skills-list li:hover {
+    transform: scale(1.2);
+    transition: all 0.1s ease-out;
+  
+  }
+
+  .skills-list img {
+    width: 50px;
+  }
+
+  .profile-resume p {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .profile-resume {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0; 
+  }
+
+  .content-titles h1 {
+    font-size: 30px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+  }
+
+  .content-titles h2 {
+    font-size: 20px;
+    margin-top: -10px; 
+  }
+
+  .content-titles p {
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  .recent-projects-resume h2 {
+    font-size: 30px;
+  }
+
+  .recent-projects-resume p {
+    font-size: 22px;
+    width: 302px;
+  }
+
+  .container-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recent-projects {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .recent-projects img {
+    margin-top: 0; 
+    padding: 10px;
+  }
+
+  .box-profile {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .profile-resume {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+  
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .eyes-container {
+    display: none;
+  }
+
+  .content-titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-titles h1 {
+    font-size: 45px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+  }
+
+  .content-titles h2 {
+    font-size: 30px;
+    margin-top: -10px;
+  }
+  
+  .content-titles p {
+    margin-top: -10px;
+    font-size: 20px;
+  }
+
+  .recent-projects-resume h2 {
+    font-size: 60px;
+  }
+
+  .recent-projects-resume p {
+    font-size: 25px;
+    width: 420px;
+  }
+
+  .container-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .profile-resume p {
+    padding: 30px;
+    width: 85%;
+    text-align: justify;
+  }
+
+
+  .recent-projects {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .recent-projects img {
+    margin-top: -60px;
+    padding: 10px;
+  }
+  .box-projects, .box-profile h2 {
+    text-align: center;
+  }
+
+  .box-profile {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .content-info h1 {
+    margin-bottom: 5px;
+  }
+
+
+  .recent-projects-resume {
+    width: 30%;
+  }
+
+  .container-projects {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .presentation {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .box-projects, .box-profile h2 {
+    text-align: center;
+  }
+}
+

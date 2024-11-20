@@ -1,0 +1,60 @@
+.pupile {
+  background-color: #000;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.pupile:active {
+  height: 90px;
+  width: 100px;  
+  transition: all 0.1s ease-in;
+}
+
+.eye {
+  background-color: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: grid;
+  filter: drop-shadow(3px 3px 5px #0a0a0a2d );
+  height: 350px;
+  margin-top: 100px;
+  overflow: hidden;
+  place-items: center;
+  width: 350px;
+}
+
+.eye:active {
+  animation: veins 2s;
+  transform: scale(1.03);
+  transition: all 0.1s ease-in;
+}
+
+.eyes-wrapper {
+  column-gap: 10px;
+  display: flex;
+}
+
+@keyframes veins {
+  0% {
+    background-image: url('../../src/svg/veins.svg');
+  }
+  50% {
+    background-image: url('../../src/svg/veins.svg');
+  }
+  100% {
+    background-image: url('../../src/svg/veins.svg');
+  }
+}
+
+@media (max-width: 480px) {
+  .eye, .pupile {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .eye, .pupile {
+    display: none;
+  }
+}

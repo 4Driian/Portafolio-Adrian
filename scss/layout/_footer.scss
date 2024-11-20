@@ -1,0 +1,76 @@
+@import '../abstracts/variables';
+.footer {
+  text-align: center;
+  color: $font-color-white;
+  padding-top: 10px;
+}
+
+.social-media-description {
+  font-size: 30px;
+}
+
+.hand-up {
+  position: fixed;
+  bottom: 20px;
+  right: -10px;
+  transition: all .60s ease-in-out;
+}
+
+.hand-up:hover {
+  transform: rotate(.1turn);
+}
+
+.social-media-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.copyright {
+  padding-top: 150px;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .hand-up {
+    display: none;
+  }
+  
+  .overlay-text {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hand-up {
+    display: none;
+  }
+  
+  .overlay-text {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .overlay-text {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $font-color-black;
+    background-color: #fff;
+    border-radius: 0.2px;
+    padding: 17px;
+    opacity: 0;
+    font-size: 18px;
+    width: 100px;
+    pointer-events: none;
+    filter: $soft-shadow;
+    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  }
+  
+  .social-media-overlay:hover .overlay-text  {
+    opacity: 1;
+    bottom: 0;
+  }
+}

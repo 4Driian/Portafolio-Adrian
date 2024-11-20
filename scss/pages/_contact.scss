@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+.title-contact {
+  margin-top: -50px;
+}
+
+@media (max-width: 480px) {
+  .contact-box h2 {
+    margin-top: -35px;
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+
+  .contact-form div {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-sms textarea {
+    margin: 0 auto;
+    width: 55%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+
+}
+
