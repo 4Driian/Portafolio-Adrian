@@ -216,6 +216,9 @@
 }
 
 @media (max-width: 480px) {
+  .direct-mail {
+    font-size: 20px;
+  }
   .nav-principal {
     display: none;
   }
@@ -430,7 +433,7 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, rgb(1, 79, 134) 0%, rgb(1, 58, 99) 100%);
+  background: linear-gradient(163deg, rgb(1, 79, 134) 0%, rgb(0, 36, 61) 100%);
   margin: 0;
   padding: 0;
 }
@@ -870,7 +873,18 @@ p, a {
   font-size: 16px;
 }
 
+.arjesu img {
+  width: 400px;
+}
+
 @media (max-width: 480px) {
+  .social-media-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-media-links a {
+    margin-top: 10px;
+  }
   .hand-up {
     display: none;
   }
@@ -879,6 +893,13 @@ p, a {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .social-media-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-media-links a {
+    margin-top: 10px;
+  }
   .hand-up {
     display: none;
   }

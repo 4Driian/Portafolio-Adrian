@@ -30,7 +30,19 @@
   font-size: 16px;
 }
 
+.arjesu img{
+  width: 400px;
+}
+
 @media (max-width: 480px) {
+  .social-media-links {
+    display: flex;
+    flex-direction: column;
+    & a {
+      margin-top: 10px;
+    }
+  }
+
   .hand-up {
     display: none;
   }
@@ -38,10 +50,18 @@
   .overlay-text {
     display: none;
   }
-  
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .social-media-links {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      margin-top: 10px;
+    }
+  }
+
   .hand-up {
     display: none;
   }
@@ -73,4 +93,6 @@
     opacity: 1;
     bottom: 0;
   }
+
+
 }
