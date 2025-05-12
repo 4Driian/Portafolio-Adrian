@@ -52,6 +52,14 @@
   overflow: hidden;
 }
 
+.linkedin-logo img{
+  width: 100px;
+}
+
+.linkedin-logo a{
+  background-color: none;
+}
+
 @media (max-width: 480px) {
   .logo-principal {
     margin-top: 35px;

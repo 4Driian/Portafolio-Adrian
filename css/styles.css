@@ -289,6 +289,14 @@
   overflow: hidden;
 }
 
+.linkedin-logo img {
+  width: 100px;
+}
+
+.linkedin-logo a {
+  background-color: none;
+}
+
 @media (max-width: 480px) {
   .logo-principal {
     margin-top: 35px;
@@ -885,6 +893,9 @@ p, a {
   .social-media-links a {
     margin-top: 10px;
   }
+  .arjesu img {
+    width: 200px;
+  }
   .hand-up {
     display: none;
   }
@@ -899,6 +910,9 @@ p, a {
   }
   .social-media-links a {
     margin-top: 10px;
+  }
+  .arjesu img {
+    width: 187px;
   }
   .hand-up {
     display: none;
