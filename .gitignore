@@ -1,3 +1,4 @@
 .vscode
 styles.css.map
 ./src/js/components/form.js
+.env
