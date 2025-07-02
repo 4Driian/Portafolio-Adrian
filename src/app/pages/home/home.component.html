@@ -1,0 +1,80 @@
+<main class="main-content">
+  <div class="presentation content">
+    <!-- Eyes tracker container -->
+    <app-eyes></app-eyes>
+    
+    <!-- Presentation description -->
+    <div class="content-info">
+      <div class="content content-titles">
+        <h1>Hi, I'm Adrián!</h1>
+        <h2>I'm a Web Designer and Developer.</h2>
+        <p>As a developer, I like to set myself new challenges every day and be able to overcome them successfully!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section class="box-profile">
+    <article class="content container-profile">
+      <h2>About Me</h2>
+      <div class="profile-resume">
+        <p class="about-me">
+          I'm Adrián Zúñiga Pérez, passionate about technology. 
+          My personal and professional development has been guided by this attraction since my early years. 
+          I consider myself a person passionate about challenges and constant improvement. 
+          With a creative and perseverant mindset, each project becomes an opportunity to learn and grow. 
+          <br><br>
+          My focus is on front-end development, and throughout my career,
+          I have cultivated a deep interest in user experience (UX/UI), 
+          ensuring the success of every initiative. In my career, 
+          I am committed to continuous learning of new technologies 
+          and working methods, always eager to discover new passions and achieve more ambitious goals.
+        </p>
+        <div class="image-profile">
+          <img src="assets/img/image-profile.jpg" alt="Adrian Profile">
+        </div>
+      </div>
+    </article>
+
+    <!-- Skills Section -->
+    <article class="content skills">
+      <h2>Some skills</h2>
+      <div class="skills-list">
+        <ul>
+          <li *ngFor="let skill of skills">
+            <img [src]="skill.icon" [alt]="skill.name">
+            <span class="overlay-text-skills">{{ skill.name }}</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
+  
+  <!-- Recent Projects Section -->
+  <section class="box-projects">
+    <div class="content container-projects">
+      <div class="recent-projects-resume">
+        <h2>Here!</h2>
+        <p class="projects-description">
+          These are some of my projects that I have done throughout my career in web development and design! 
+          <br><br> 
+          Open the link to see all the projects created, each one of them in a different semester!
+        </p>
+        <a class="nav-link link-portfolio-desktop" routerLink="/portfolio">Go to portfolio</a>
+      </div>
+      <div class="recent-projects">
+        <article *ngFor="let project of projects">
+          <div class="project-item">
+            <a class="projects-link" [ngClass]="project.class" [href]="project.link">
+              <img [src]="project.image" [alt]="'Imagen de proyecto de ' + project.name">
+              <div class="project-overlay">
+                <h3>{{ project.name }}</h3>
+              </div>
+            </a>
+          </div>
+        </article>
+      </div>
+      <a class="nav-link link-portfolio-mobile" routerLink="/portfolio">Go to portfolio</a>
+    </div>
+  </section>
+</main>

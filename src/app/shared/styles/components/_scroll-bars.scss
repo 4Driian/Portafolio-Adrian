@@ -1,0 +1,23 @@
+@import '../variables';
+
+::-webkit-scrollbar {
+  width: $spacing-md;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $transparent-white;
+  background: linear-gradient(0deg, $background-gradient-start 0%, rgba(1, 58, 99, 1) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $white;
+  border-radius: $border-radius-md;
+
+  &:hover {
+    background: $white;
+  }
+
+  &:active {
+    border: 1px solid $background-gradient-start;
+  }
+}

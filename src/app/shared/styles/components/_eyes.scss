@@ -1,0 +1,57 @@
+@import '../variables';
+@import '../mixins';
+
+.pupile {
+  background-color: $font-color-black;
+  border-radius: $border-radius-circle;
+  height: 90px;
+  width: 90px;
+  transition: all $transition-fast;
+
+  &:active {
+    height: 90px;
+    width: 100px;
+  }
+}
+
+.eye {
+  background-color: $white;
+  border-radius: $border-radius-circle;
+  box-sizing: border-box;
+  display: grid;
+  filter: $soft-shadow;
+  height: 350px;
+  margin-top: 100px;
+  overflow: hidden;
+  place-items: center;
+  width: 350px;
+  transition: all $transition-fast;
+
+  &:active {
+    animation: veins 2s;
+    transform: scale(1.03);
+  }
+}
+
+.eyes-wrapper {
+  column-gap: $spacing-sm;
+  display: flex;
+}
+
+@keyframes veins {
+  0%, 50%, 100% {
+    background-image: url('../../../../assets/svg/veins.svg');
+  }
+}
+
+@include mobile-only {
+  .eye, .pupile {
+    display: none;
+  }
+}
+
+@include large-desktop-up {
+  .eye, .pupile {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+// Global SASS Variables
+@import './app/shared/styles/variables';
+@import './app/shared/styles/mixins';
+
+// Components
+@import './app/shared/styles/components/eyes';
+@import './app/shared/styles/components/scroll-bars';
+@import './app/shared/styles/components/buttons';
+@import './app/shared/styles/components/images';
+@import './app/shared/styles/components/skills';
+
+// Base
+@import './app/shared/styles/base/base';
+@import './app/shared/styles/base/typography';
+
+// Layout
+@import './app/shared/styles/layout/footer';
+@import './app/shared/styles/layout/nav';

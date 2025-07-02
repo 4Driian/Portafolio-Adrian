@@ -1,0 +1,31 @@
+<main>
+  <section class="portfolio-content content">
+    <h1>Portfolio</h1>
+    
+    <article 
+      *ngFor="let project of projects" 
+      [ngClass]="project.alignment === 'right' ? 'box-info-right' : 'box-info-left'">
+      
+      <div class="project-item">
+        <a class="projects-link" [ngClass]="project.class || ''" [href]="project.link">
+          <img [src]="project.image" [alt]="'Imagen de proyecto de ' + project.name">
+          <div class="project-overlay">
+            <h3>{{ project.name }}</h3>
+          </div>
+        </a>
+      </div>
+      
+      <div class="background--white">
+        <p>{{ project.description }}</p>
+        <div class="skills-list">
+          <ul>
+            <li *ngFor="let skill of project.skills">
+              <img [src]="skill.icon" [alt]="skill.name">
+              <span class="overlay-text-skills">{{ skill.name }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>

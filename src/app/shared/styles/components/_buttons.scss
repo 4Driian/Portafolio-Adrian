@@ -1,0 +1,100 @@
+@import '../variables';
+@import '../mixins';
+
+.nav-link {
+  @include button-blue-template;
+}
+
+.button-submit {
+  @include button-blue-template;
+}
+
+.direct-mail {
+  color: $white;
+  font-size: 36px;
+  text-decoration: none;
+  padding: $spacing-md;
+  border-radius: $border-radius-md;
+  background-color: $light-blue;
+
+  &:hover {
+    transition: all $transition-normal;
+    background-color: $white;
+    color: $font-color-black;
+  }
+}
+
+.box-btn {
+  @include button-blue-template;
+  bottom: $spacing-xl;
+  position: absolute;
+  right: $spacing-xl;
+}
+
+// Navigation effects
+.eyes-appear::before {
+  left: 50%;
+  background-image: url('../../../../assets/svg/micro-eyes.svg');
+  height: 75px;
+  top: 10%;
+  transform: translateX(-50%);
+  @include effect-appear;
+}
+
+.eyes-appear:hover::before {
+  top: -70%;
+  opacity: 1;
+}
+
+.hand-portfolio::before {
+  left: 50%;
+  background-image: url('../../../../assets/svg/portfolio-hand.svg');
+  height: 65px;
+  top: -12%;
+  transform: translateX(-30%);
+  @include effect-appear;
+}
+
+.hand-portfolio:hover::before {
+  top: 78%;
+  opacity: 1;
+}
+
+.hand-contact::before {
+  background-image: url('../../../../assets/svg/hand-cellphone.svg');
+  left: 20%;
+  height: 65px;
+  transform: translateY(-10%);
+  @include effect-appear;
+}
+
+.hand-contact:hover::before {
+  left: -48%;
+  opacity: 1;
+}
+
+@include mobile-only {
+  .direct-mail {
+    font-size: $font-size-lg;
+  }
+
+  .nav-principal {
+    display: none;
+  }
+
+  .link-portfolio-desktop {
+    display: none;
+  }
+}
+
+@include tablet-only {
+  .link-portfolio-desktop {
+    display: none;
+  }
+}
+
+@include desktop-up {
+  .link-portfolio-mobile {
+    display: none;
+  }
+}

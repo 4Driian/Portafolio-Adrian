@@ -1,0 +1,22 @@
+@import '../variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(163deg, $background-gradient-start 0%, $background-gradient-end 100%);
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $light-blue;
+  color: $font-color-white;
+  border-radius: 2px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+}

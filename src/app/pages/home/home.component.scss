@@ -1,0 +1,264 @@
+@import '../../shared/styles/variables';
+@import '../../shared/styles/mixins';
+
+.content-info {
+  display: flex;
+  flex-direction: column; 
+  color: $font-color-white;
+}
+
+.content-titles {
+  h1, h2, p {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: $spacing-sm;
+  }
+
+  p {
+    margin-top: $spacing-sm;
+  }
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.box-profile {
+  margin-top: 200px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $white;
+  
+  h2 {
+    text-align: center; 
+  }
+}
+
+.about-me {
+  font-size: $font-size-xxl;
+  margin-bottom: $spacing-xxl;
+}
+
+.profile-resume {
+  display: flex;
+  justify-content: space-around;
+
+  p {
+    padding: $spacing-xl;
+    width: 60%;
+    text-align: justify;
+  }
+}
+
+.content.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-projects {
+  margin-top: 150px;
+  color: $font-color-white;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.recent-projects {
+  text-align: center;
+}
+
+.projects-description {
+  font-size: $spacing-xl;
+  margin-bottom: $spacing-xxl;
+}
+
+@include mobile-only {
+  .profile-resume {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    p {
+      font-size: $font-size-lg;
+      width: 90%;
+    }
+  }
+
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: $spacing-xxl;
+    margin-bottom: 0; 
+  }
+
+  .content-titles {
+    h1 {
+      font-size: $spacing-xl;
+      margin-top: -60px;
+      margin-bottom: $spacing-md;
+    }
+
+    h2 {
+      font-size: $font-size-lg;
+      margin-top: -10px; 
+    }
+
+    p {
+      margin-top: -10px;
+      font-size: $font-size-md;
+    }
+  }
+
+  .recent-projects-resume {
+    h2 {
+      font-size: $spacing-xl;
+    }
+
+    p {
+      font-size: $font-size-xl;
+      width: 302px;
+    }
+  }
+
+  .container-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recent-projects {
+    margin-top: $spacing-xl;
+    display: flex;
+    flex-direction: column; 
+
+    img {
+      margin-top: 0; 
+      padding: $spacing-sm;
+    }
+  }
+
+  .box-profile {
+    margin-top: $spacing-xl;
+    padding-top: $spacing-xl;
+  }
+}
+
+@include tablet-only {
+  .profile-resume {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    p {
+      padding: $spacing-xl;
+      width: 85%;
+      text-align: justify;
+    }
+  }
+  
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: $spacing-xxl;
+    margin-bottom: 0;
+  }
+
+  .eyes-container {
+    display: none;
+  }
+
+  .content-titles {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 45px;
+      margin-top: -60px;
+      margin-bottom: $spacing-md;
+    }
+
+    h2 {
+      font-size: $spacing-xl;
+      margin-top: -10px;
+    }
+    
+    p {
+      margin-top: -10px;
+      font-size: $font-size-lg;
+    }
+  }
+
+  .recent-projects-resume {
+    h2 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: $font-size-xxl;
+      width: 420px;
+    }
+  }
+
+  .container-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recent-projects {
+    margin-top: $spacing-xl;
+    display: flex;
+
+    img {
+      margin-top: -60px;
+      padding: $spacing-sm;
+    }
+  }
+
+  .box-projects, .box-profile h2 {
+    text-align: center;
+  }
+
+  .box-profile {
+    margin-top: $spacing-xl;
+    padding-top: $spacing-xl;
+  }
+}
+
+@include desktop-up {
+  .content-info h1 {
+    margin-bottom: $spacing-xs;
+  }
+
+  .recent-projects-resume {
+    width: 30%;
+  }
+
+  .container-projects {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .presentation {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .box-projects, .box-profile h2 {
+    text-align: center;
+  }
+}

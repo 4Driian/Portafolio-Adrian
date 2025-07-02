@@ -1,0 +1,73 @@
+@import 'variables';
+
+@mixin effect-appear {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  position: absolute;
+  transition: top $transition-normal, opacity $transition-normal;
+  width: 75px;
+  z-index: -1;
+}
+
+@mixin button-blue-template {
+  background-color: $light-blue;
+  border-radius: $border-radius-lg;
+  border: none;
+  color: $font-color-white;
+  font-size: $font-size-lg;
+  padding: $spacing-md 33px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  
+  &:hover {
+    transition: all $transition-normal;
+    background-color: $white;
+    color: $font-color-black;
+  }
+}
+
+@mixin box-info-style {
+  background-color: $white;
+  border-radius: $border-radius-xl;
+  color: $font-color-black;
+  filter: $soft-shadow;
+  padding: 0px 40px;
+  width: 60%;
+}
+
+@mixin mobile-only {
+  @media (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop-min) {
+    @content;
+  }
+}
+
+@mixin large-desktop-up {
+  @media (min-width: $large-desktop-min) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-shadow {
+  text-shadow: 3px 3px 5px rgba(10, 10, 10, 0.1764705882);
+}

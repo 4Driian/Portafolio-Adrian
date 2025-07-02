@@ -1,0 +1,51 @@
+// Colors
+$font-color-white: #fff;
+$font-color-black: #000;
+$light-blue: #2a6f97;
+$background-gradient-start: rgba(1, 79, 134, 1);
+$background-gradient-end: rgba(0, 36, 61, 1);
+$white: #ffffff;
+$transparent-white: #ffffff00;
+
+// Filters
+$soft-shadow: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+
+// Spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+$spacing-xxl: 50px;
+
+// Border radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 13px;
+$border-radius-xl: 15px;
+$border-radius-circle: 50%;
+
+// Font sizes
+$font-size-sm: 16px;
+$font-size-md: 18px;
+$font-size-lg: 20px;
+$font-size-xl: 22px;
+$font-size-xxl: 25px;
+$font-size-xxxl: 30px;
+
+// Breakpoints
+$mobile-max: 480px;
+$tablet-min: 481px;
+$tablet-max: 768px;
+$desktop-min: 769px;
+$large-desktop-min: 1100px;
+
+// Transitions
+$transition-fast: 0.1s ease-in;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.6s ease-in-out;
+
+// Z-index
+$z-index-nav: 1000;
+$z-index-modal: 2000;
+$z-index-tooltip: 3000;

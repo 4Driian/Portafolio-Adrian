@@ -1,0 +1,40 @@
+<main>
+  <section class="contact-content content">
+    <div class="contact-box">
+      <h2 class="title-contact">Contact Me</h2>
+      <form class="contact-form" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="name">Name:</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            [(ngModel)]="contactForm.name" 
+            required>
+        </div>
+        
+        <div>
+          <label for="email">Email:</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            [(ngModel)]="contactForm.email" 
+            required>
+        </div>
+        
+        <div class="form-sms">
+          <label for="message">Message:</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            [(ngModel)]="contactForm.message" 
+            rows="5" 
+            required></textarea>
+        </div>
+        
+        <button type="submit" class="button-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>

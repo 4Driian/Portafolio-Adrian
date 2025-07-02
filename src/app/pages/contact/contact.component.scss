@@ -1,0 +1,76 @@
+@import '../../shared/styles/variables';
+@import '../../shared/styles/mixins';
+
+.contact-content {
+  padding-top: $spacing-xxl;
+  padding-bottom: 150px;
+  color: $font-color-white;
+}
+
+.contact-box {
+  @include flex-center;
+  flex-direction: column;
+  
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  
+  div {
+    margin-bottom: $spacing-lg;
+    display: flex;
+    flex-direction: column;
+    
+    label {
+      margin-bottom: $spacing-xs;
+      font-weight: bold;
+    }
+    
+    input, textarea {
+      padding: $spacing-sm;
+      border: 1px solid #ccc;
+      border-radius: $border-radius-sm;
+      font-size: $font-size-sm;
+      
+      &:focus {
+        outline: none;
+        border-color: $light-blue;
+      }
+    }
+  }
+  
+  .button-submit {
+    @include button-blue-template;
+    width: 100%;
+    margin-top: $spacing-lg;
+  }
+}
+
+.title-contact {
+  margin-top: -50px;
+}
+
+@include mobile-only {
+  .contact-box h2 {
+    margin-top: -35px;
+    margin-bottom: $spacing-xl;
+    font-size: 35px;
+  }
+
+  .contact-form div {
+    margin: 0 auto;
+    margin-bottom: $spacing-xxl;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-sms textarea {
+    margin: 0 auto;
+    width: 55%;
+  }
+}

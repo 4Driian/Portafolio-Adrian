@@ -1,0 +1,220 @@
+@import '../variables';
+@import '../mixins';
+
+.nav-principal {
+  margin-top: $spacing-lg;
+
+  ul {
+    margin-top: -10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    filter: $soft-shadow;
+    list-style: none;
+  }
+}
+
+@include mobile-only {
+  .nav-mobile {
+    width: 50%;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: relative;
+    top: $spacing-xxl;
+    left: $spacing-xxl;
+    z-index: $z-index-nav;
+    width: 20%;
+
+    a {
+      text-decoration: none;
+      color: $font-color-black;
+      transition: color $transition-normal;
+
+      &:hover {
+        color: tomato;
+      }
+    }
+
+    input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+
+      &:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 7px);
+        background: $font-color-black;
+
+        &:nth-last-child(3) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        &:nth-last-child(2) {
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+      }
+
+      &:checked ~ ul {
+        transform: none;
+      }
+    }
+
+    span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: $spacing-xs;
+      position: relative;
+      background: $white;
+      border-radius: 3px;
+      z-index: 1;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+                  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+                  opacity 0.55s ease;
+
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    }
+  }
+
+  .menu {
+    background: $white;
+    border-radius: 0px 0px $border-radius-xl 0px;
+    list-style-type: none;
+    margin: -100px 0 0 -60px;
+    padding: 110px $spacing-xxl $spacing-xxl $spacing-xxl;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    filter: $soft-shadow;
+
+    li {
+      padding: $spacing-sm 0;
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+@include tablet-only {
+  .nav-principal {
+    display: none;
+  }
+
+  .nav-mobile {
+    width: 50%;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: relative;
+    top: $spacing-xxl;
+    left: $spacing-xxl;
+    z-index: $z-index-nav;
+    width: 20%;
+
+    a {
+      text-decoration: none;
+      color: $font-color-black;
+      transition: color $transition-normal;
+
+      &:hover {
+        color: tomato;
+      }
+    }
+
+    input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+
+      &:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 7px);
+        background: $font-color-black;
+
+        &:nth-last-child(3) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        &:nth-last-child(2) {
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+      }
+
+      &:checked ~ ul {
+        transform: none;
+      }
+    }
+
+    span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: $spacing-xs;
+      position: relative;
+      background: $white;
+      border-radius: 3px;
+      z-index: 1;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+                  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), 
+                  opacity 0.55s ease;
+
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    }
+  }
+
+  .menu {
+    background: $white;
+    border-radius: 0px 0px $border-radius-xl 0px;
+    list-style-type: none;
+    margin: -100px 0 0 -60px;
+    padding: 110px $spacing-xxl $spacing-xxl $spacing-xxl;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    filter: $soft-shadow;
+
+    li {
+      padding: $spacing-sm 0;
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+@include desktop-up {
+  .nav-toggle {
+    display: none;
+  }
+}

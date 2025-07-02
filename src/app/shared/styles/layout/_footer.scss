@@ -1,0 +1,120 @@
+@import '../variables';
+@import '../mixins';
+
+.footer {
+  text-align: center;
+  color: $font-color-white;
+  padding-top: $spacing-sm;
+}
+
+.social-media-description {
+  font-size: $spacing-xl;
+}
+
+.hand-up {
+  position: fixed;
+  bottom: $spacing-lg;
+  right: -10px;
+  transition: all $transition-slow;
+
+  &:hover {
+    transform: rotate(0.1turn);
+  }
+}
+
+.social-media-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.copyright {
+  padding-top: 150px;
+  font-size: $font-size-sm;
+}
+
+.arjesu img {
+  width: 400px;
+}
+
+.social-media {
+  color: $font-color-white;
+  padding-top: $spacing-lg;
+
+  .social-media-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: $spacing-xxl;
+  }
+}
+
+@include mobile-only {
+  .social-media-links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-top: $spacing-sm;
+    }
+  }
+
+  .arjesu img {
+    width: 200px;
+  }
+
+  .hand-up {
+    display: none;
+  }
+
+  .overlay-text {
+    display: none;
+  }
+}
+
+@include tablet-only {
+  .social-media-links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-top: $spacing-sm;
+    }
+  }
+
+  .arjesu img {
+    width: 187px;
+  }
+
+  .hand-up {
+    display: none;
+  }
+
+  .overlay-text {
+    display: none;
+  }
+}
+
+@include desktop-up {
+  .overlay-text {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $font-color-black;
+    background-color: $white;
+    border-radius: 0.2px;
+    padding: 17px;
+    opacity: 0;
+    font-size: $font-size-md;
+    width: 100px;
+    pointer-events: none;
+    filter: $soft-shadow;
+    transition: opacity $transition-normal, bottom $transition-normal;
+  }
+
+  .social-media-overlay:hover .overlay-text {
+    opacity: 1;
+    bottom: 0;
+  }
+}
